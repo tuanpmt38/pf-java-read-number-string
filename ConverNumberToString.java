@@ -5,8 +5,8 @@ public class ConverNumberToString {
         Scanner input = new Scanner(System.in);
         System.out.print("Nhập vào một số có 2 chữ số: ");
         int n = input.nextInt();
-        int ch = (n % 100) / 10;
-        int dv = ((n % 100) % 10);
+        int ch = n / 10 ;
+        int dv = n % 10;
 
         if ((ch == 1) && (dv == 0))
             System.out.print(" Muoi ");
